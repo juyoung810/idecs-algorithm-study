@@ -1,4 +1,4 @@
-# idecs-algorihm-study
+# idecs-algorithm-study
 
 ---
 
