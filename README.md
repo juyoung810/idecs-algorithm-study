@@ -56,7 +56,7 @@ https://git-scm.com/downloads (자세한건 검색하기)
 3. 해당 폴더로 이동 후 폴더 안에서 마우스 오른쪽 클릭 후 "Git Bash Here"  클릭
 4. 자신의 branch 생성하기
 
-          git branch [자신의이름, 별명 , 아이디]
+          git branch [자신의이름 or 별명 or 아이디 중 마음대로 하나]
 
 5. 생성한 branch로 이동
 
