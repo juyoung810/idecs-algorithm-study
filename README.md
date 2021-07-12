@@ -1,0 +1,108 @@
+# idecs-algorihm-study
+
+---
+
+>아이덱스 2021 하계 여름 방학 알고리즘 스터디를 위한 저장소입니다.
+
+## Programming Language
+
+---
+
++ python
++ 기본으로 python 언어를 사용하여 코드를 작성, 해설한다.
++ 추가적으로 다른 언어를 사용하여 푼 경우 해당 코드를 올리는 것은 자유
+
+## 알고리즘 사이트
+
+---
++ baekjoon: https://www.acmicpc.net/
+
+## 폴더 구조
+
+---
++ 사이트 폴더 - 문제 폴더 - 소스코드 및 풀이 방법 파일
+    + 예) boj -> 1000 -> juyoung.py, 풀이방법.md
++ 소스코드: 자신의 이름, 별명, 아이디 중 하나 .확장자명 으로 작성한다.
+    + 예) juyoung.py, juyoung.cpp, juyoung.java
+  
++ 풀이방법: 자신의 이름 혹은 아이디 뒤에 _풀이방법.md 로 작성한다.
+  + 예) juyoung_풀이방법.md
+  
+
+## 스터디 Rule
+
+---
++  "이것이 취업을 위한 코딩 테스트다. with Python" 이틀에 1 part 씩 공부
++  해당 part의 예제 풀이 후 소스 코드 PR 필수
++  선정된 4문제 중 하나 반드시 풀이 후 해설 준비
++  문제 풀이 후 해당 문제 폴더에 자신의 소스코드 PR
++  다 풀지 못하더라도 pseudo code 또는 아이디어 제시 후 PR 해보기!
++  두 시간이상 고민했더라도 풀지 못할 경우, 잘 정리된 코드 찾아본 후 분석 , 정리 후 PR 권장
++  해설 내용: 문제 접근 방법, 시간 복잡도 , 공간 복잡도 등등,, 내용 설명
++  해설 내용은 @juyoung810 이 정리 후 풀이 방법.md 파일로 올릴 예정(참고)
+
+## Git 사용 방법
+
+---
+#### 1. git 설치  
+https://git-scm.com/downloads (자세한건 검색하기)
+#### 2. git clone
+1. 해당 repository의 초록색 code 버튼 아래의 주소 복사
+2. 다운로드하길 원하는 폴더의 위치로 이동 후 터미널 창에
+
+       git clone [복사한 url]
+
+3. 해당 폴더로 이동 후 폴더 안에서 마우스 오른쪽 클릭 후 "Git Bash Here"  클릭
+4. 자신의 branch 생성하기
+
+          git branch [자신의이름, 별명 , 아이디]
+
+5. 생성한 branch로 이동
+
+        git checkout [생성한 branch 이름]
+
+
+### 3. 평상시 git에 PR 방법 
+1. 원격 저장소(Remote repository)와 내 로컬 저장소의 상태 동일하게 하기 위해
+
+       git pull
+
+2. 각각 해당하는 폴더에 자신의 소스 코드 작성
+   + 소스 코드 작성이전에 자신이 생성한 브런치인지 확인
+   
+          git checkout [자신이 생성한 브런치]
+
+3. 소스 코드 작성 후  원격 repository에 PR 방법
+  1. staging 영역에 추가
+
+          git add .
+
+  2. repository에 commit
+
+          git commit -m "커밋 메세지 자유"
+
+
+  3. 원격 저장소의 main branch 에 푸쉬
+  
+          git push origin [자신의 브런치 이름]
+
+
+
+          
+
+
+
+     
+
+
+
+
+
+
+  
+    
+    
+
+
+
+
