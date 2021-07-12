@@ -49,7 +49,7 @@
 https://git-scm.com/downloads (자세한건 검색하기)
 #### 2. git clone
 1. https://github.com/juyoung810/idecs-algorithm-study repository 에 오른쪽 상단 fork 버튼 클릭
-2. 자신의 repository로 이동 후 fork 한 자신의 repository의 초록색 code 버튼 아래의 주소 복사
+2. #####자신의 repository로 이동 후 fork 한 자신의 repository의 초록색 code 버튼 아래의 주소 복사
 3. 다운로드하길 원하는 폴더의 위치로 이동 후 터미널 창에
 
        git clone [복사한 url]
