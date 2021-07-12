@@ -67,13 +67,13 @@ https://git-scm.com/downloads (자세한건 검색하기)
 ### 3. 평상시 git에 PR 방법 
 1. 원격 저장소(Remote repository)와 내 로컬 저장소의 상태 동일하게 하기 위해
 
-    1. 최초 한번만 
+    1. remote 더하는 이 과정은 최초 한번만 !!!! 밑에 거는 원격 내용 가져올 때 마다 계속 해야함!!!!
        
             git remote add upstream <joyoung의 repository 주소 복사> 
     
     2.      git fetch upstream
     3.      git checkout master
-    4.      git merge upstream/main
+    4.      git merge upstream/master
     
     5.      git checkout <내가 만든 브런치>
     6.      git merge master
