@@ -62,34 +62,46 @@ https://git-scm.com/downloads (자세한건 검색하기)
 6. 생성한 branch로 이동
 
         git checkout [생성한 branch 이름]
+7. 주영의 repository 와 내가 만든 로컬 동기화 하기 위해 주소 추가
+
+        git remote add upstream https://github.com/juyoung810/idecs-algorithm-study.git
 
 
-### 3. 평상시 git에 PR 방법 
-1. 원격 저장소(Remote repository)와 내 로컬 저장소의 상태 동일하게 하기 위해
 
-    1. remote 더하는 이 과정은 최초 한번만 !!!! 밑에 거는 원격 내용 가져올 때 마다 계속 해야함!!!!
-       
-            git remote add upstream <joyoung의 repository 주소 복사> 
+### 3. 주영의 repository 의 내용 받아 오고 싶을 때  (동기화) -> 주영거랑 내거랑 달라진게 없으면 안해도 됨!
+
+1. 주영의 repsitory(upstream으로 저장해 놓음)의 내용을 받는다.
+   
+            git fetch upstream
+   
+2.  자신이 만든 branch가 아닌 main으로 이동
     
-    2.      git fetch upstream
-    3.      git checkout main
-    4.      git merge upstream/main
+            git checkout main
     
-    5.      git checkout <내가 만든 브런치>
-    6.      git merge main
+3.  나의 main과 주영의 repository(upstream) 합치기
 
-2. 각각 해당하는 폴더에 자신의 소스 코드 작성
-   + 소스 코드 작성이전에 자신이 생성한 브런치인지 확인
+        git merge upstream/main
+
+4.  나의 branch로 이동
+
+        git checkout <내가 만든 브런치>
+
+5.  주영의 내용과 합친 나의 main을 나의 branch와 합치기   
+
+        git merge main
+
+### 4. 각각 해당하는 폴더에 자신의 소스 코드 작성
+   + 소스 코드 작성이전에 자신이 생성한 브런치인지 확인 -> 이미 자기 branch면 안해도 됨
    
           git checkout [자신이 생성한 브런치]
+   -> 소스 코드 작성하기
 
-3. 소스 코드 작성 
-
-4. staging 영역에 추가
+### 5. 내가 작성한 소스 코드 올리기
+1. staging 영역에 추가
 
           git add .
 
-5. repository에 commit
+2. repository에 commit
 
           git commit -m "커밋 메세지 자유"
 
@@ -99,13 +111,14 @@ https://git-scm.com/downloads (자세한건 검색하기)
 
         !! git 에 한번도 commit 해본 적 없는 경우 하면 됨.
 
-6. 원격 저장소의 main branch 에 푸쉬
+3. 원격 저장소의 main branch 에 푸쉬
   
           git push origin [자신의 브런치 이름]
 
 4. PR 날리는 법 ()
-    1. 원격 git repository 로 이동 : https://github.com/juyoung810/idecs-algorithm-study
-    2. issue 옆 pull request 버튼 클릭
+    1. 자신의 원격 git repository 로 이동 : https://github.com/[본인 아이디]/idecs-algorithm-study
+    2. issue 옆 pull request 버튼 클릭 
+       + base repository : juyoung810/.. base:main <- head repository: 자기 아이디/.. compare: 자신이 만든 branch 
     3. create pull request 버튼 계속 클릭!! -> 모르겠으면 pull request 날리는 법 검색 해보기!
     
 
