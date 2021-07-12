@@ -73,23 +73,31 @@ https://git-scm.com/downloads (자세한건 검색하기)
    
           git checkout [자신이 생성한 브런치]
 
-3. 소스 코드 작성 후  원격 repository에 PR 방법
-  1. staging 영역에 추가
+3. 소스 코드 작성 
+
+4. staging 영역에 추가
 
           git add .
 
-  2. repository에 commit
+5. repository에 commit
 
           git commit -m "커밋 메세지 자유"
 
+    + 처음 commit 할 시 *** Please tell me who you are. 메세지가 뜬다. 
+    
+            git config --global user.email [you@example.com]
 
-  3. 원격 저장소의 main branch 에 푸쉬
+        !! git 에 한번도 commit 해본 적 없는 경우 하면 됨.
+
+6. 원격 저장소의 main branch 에 푸쉬
   
           git push origin [자신의 브런치 이름]
 
-4. PR 날리는 법
-    + 원격 git repository 로 이동 : https://github.com/juyoung810/idecs-algorithm-study
-    + pull request 버튼 클릭
+4. PR 날리는 법 ()
+    1. 원격 git repository 로 이동 : https://github.com/juyoung810/idecs-algorithm-study
+    2. issue 옆 pull request 버튼 클릭
+    3. create pull request 버튼 계속 클릭 -> 모르겠으면 pull request 날리는 법 검색 해보기!
+    
 
 
           
