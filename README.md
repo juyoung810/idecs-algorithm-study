@@ -72,11 +72,11 @@ https://git-scm.com/downloads (자세한건 검색하기)
             git remote add upstream <joyoung의 repository 주소 복사> 
     
     2.      git fetch upstream
-    3.      git checkout master
-    4.      git merge upstream/master
+    3.      git checkout main
+    4.      git merge upstream/main
     
     5.      git checkout <내가 만든 브런치>
-    6.      git merge master
+    6.      git merge main
 
 2. 각각 해당하는 폴더에 자신의 소스 코드 작성
    + 소스 코드 작성이전에 자신이 생성한 브런치인지 확인
