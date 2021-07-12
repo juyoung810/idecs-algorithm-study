@@ -48,17 +48,18 @@
 #### 1. git 설치  
 https://git-scm.com/downloads (자세한건 검색하기)
 #### 2. git clone
-1. 해당 repository의 초록색 code 버튼 아래의 주소 복사
-2. 다운로드하길 원하는 폴더의 위치로 이동 후 터미널 창에
+1. https://github.com/juyoung810/idecs-algorithm-study repository 에 오른쪽 상단 fork 버튼 클릭
+2. 자신의 repository로 이동 후 fork 한 자신의 repository의 초록색 code 버튼 아래의 주소 복사
+3. 다운로드하길 원하는 폴더의 위치로 이동 후 터미널 창에
 
        git clone [복사한 url]
 
-3. 해당 폴더로 이동 후 폴더 안에서 마우스 오른쪽 클릭 후 "Git Bash Here"  클릭
-4. 자신의 branch 생성하기
+4. 해당 폴더로 이동 후 폴더 안에서 마우스 오른쪽 클릭 후 "Git Bash Here"  클릭
+5. 자신의 branch 생성하기
 
           git branch [자신의이름 or 별명 or 아이디 중 마음대로 하나]
 
-5. 생성한 branch로 이동
+6. 생성한 branch로 이동
 
         git checkout [생성한 branch 이름]
 
@@ -66,7 +67,16 @@ https://git-scm.com/downloads (자세한건 검색하기)
 ### 3. 평상시 git에 PR 방법 
 1. 원격 저장소(Remote repository)와 내 로컬 저장소의 상태 동일하게 하기 위해
 
-       git pull origin master
+    1. 최초 한번만 
+       
+            git remote add upstream <joyoung의 repository 주소 복사> 
+    
+    2.      git fetch upstream
+    3.      git checkout master
+    4.      git merge upstream/main
+    
+    5.      git checkout <내가 만든 브런치>
+    6.      git merge master
 
 2. 각각 해당하는 폴더에 자신의 소스 코드 작성
    + 소스 코드 작성이전에 자신이 생성한 브런치인지 확인
