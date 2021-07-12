@@ -66,7 +66,7 @@ https://git-scm.com/downloads (자세한건 검색하기)
 ### 3. 평상시 git에 PR 방법 
 1. 원격 저장소(Remote repository)와 내 로컬 저장소의 상태 동일하게 하기 위해
 
-       git pull
+       git pull origin master
 
 2. 각각 해당하는 폴더에 자신의 소스 코드 작성
    + 소스 코드 작성이전에 자신이 생성한 브런치인지 확인
@@ -87,6 +87,9 @@ https://git-scm.com/downloads (자세한건 검색하기)
   
           git push origin [자신의 브런치 이름]
 
+4. PR 날리는 법
+    + 원격 git repository 로 이동 : https://github.com/juyoung810/idecs-algorithm-study
+    + pull request 버튼 클릭
 
 
           
