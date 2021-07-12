@@ -106,7 +106,7 @@ https://git-scm.com/downloads (자세한건 검색하기)
 4. PR 날리는 법 ()
     1. 원격 git repository 로 이동 : https://github.com/juyoung810/idecs-algorithm-study
     2. issue 옆 pull request 버튼 클릭
-    3. create pull request 버튼 계속 클릭 -> 모르겠으면 pull request 날리는 법 검색 해보기!
+    3. create pull request 버튼 계속 클릭!! -> 모르겠으면 pull request 날리는 법 검색 해보기!
     
 
 
