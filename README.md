@@ -49,7 +49,7 @@
 https://git-scm.com/downloads (자세한건 검색하기)
 #### 2. git clone
 1. https://github.com/juyoung810/idecs-algorithm-study repository 에 오른쪽 상단 fork 버튼 클릭
-2. #####자신의 repository로 이동 후 fork 한 자신의 repository의 초록색 code 버튼 아래의 주소 복사
+##### 2. 자신의 repository로 이동 후 fork 한 자신의 repository의 초록색 code 버튼 아래의 주소 복사
 3. 다운로드하길 원하는 폴더의 위치로 이동 후 터미널 창에
 
        git clone [복사한 url]
@@ -71,7 +71,7 @@ https://git-scm.com/downloads (자세한건 검색하기)
 #### 3. 주영의 repository 의 내용 받아 오고 싶을 때  (동기화) -> 주영거랑 내거랑 달라진게 없으면 안해도 됨!
 > 항상 문제가 올라오니, 웬만하면 내용 받아오고 문제풀이 시작하는게 좋음!
 
-1. 주영의 repsitory(upstream으로 저장해 놓음)의 내용을 받는다.
+1. 주영의 repsitory(upstream으로 2.7에서 설정 )의 내용을 받는다.
    
             git fetch upstream
    
@@ -116,10 +116,10 @@ https://git-scm.com/downloads (자세한건 검색하기)
   
           git push origin [자신의 브런치 이름]
 
-4. PR 날리는 법 ()
+4. PR 날리는 법
     1. 자신의 원격 git repository 로 이동 : https://github.com/[본인 아이디]/idecs-algorithm-study
     2. issue 옆 pull request 버튼 클릭 
-       + base repository : juyoung810/.. base:main <- head repository: 자기 아이디/.. compare: 자신이 만든 branch 
+       + `base repository : juyoung810/.. base:main <- head repository: 자기 아이디/.. compare: 자신이 만든 branch `
     3. create pull request 버튼 계속 클릭!! -> 모르겠으면 pull request 날리는 법 검색 해보기!
     
 
