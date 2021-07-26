@@ -1,4 +1,4 @@
-# boj 1202: 보석 도둑 by juyoung
+# boj 1202: 보석 도둑
 > 문제 주소: https://www.acmicpc.net/problem/1202
 
 ### 문제설명
