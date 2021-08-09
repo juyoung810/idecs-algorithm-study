@@ -1,9 +1,6 @@
 # boj 1753 : 최단 경로 by juyoung
 > 문제 주소: https://www.acmicpc.net/problem/1753
 >
-<<<<<<< HEAD
-> gold 5
-=======
 > gold 5
 
 
@@ -68,4 +65,3 @@ for d in range(1, n + 1):
 - 다익스트라 알고리즘은 `두 정점 사이에 여러개의 간선이 존재` 해도 상관 없다.
 - 시간 복잡도
     - heap을 통해 구현했으므로 O(ElogV)
->>>>>>> main
