@@ -1,7 +1,7 @@
-# boj 1766 : 문제집 by KKS
+# boj 1766 : 문제집 by seoyoung
 > 문제 주소: https://www.acmicpc.net/problem/1766
-> 
-> 난이도: gold2
+>
+> gold 2
 
 ## 1.문제설명
 - N개의 문제를 풀 예정
