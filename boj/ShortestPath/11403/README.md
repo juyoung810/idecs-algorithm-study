@@ -1,10 +1,8 @@
 # boj 11403 : 경로 찾기 by juyoung
 > 문제 주소: https://www.acmicpc.net/problem/11403
 >
-<<<<<<< HEAD
 > silver 1
-=======
-> silver 1
+
 
 ## 문제 해결 방향
 
@@ -60,4 +58,3 @@ for a in range(n):
 ```
 ### 시간 복잡도
 - 플루이드 워샬 알고리즘을 벗어나는 시간 복잡도가 없으므로 : `O(N^3)`
->>>>>>> main
