@@ -1,12 +1,8 @@
 # idecs-algorithm-study
 
----
-
 >아이덱스 2021 하계 여름 방학 알고리즘 스터디
 
 ## Programming Language
-
----
 
 + python
 + 기본으로 python 언어를 사용하여 코드를 작성, 해설한다.
@@ -14,12 +10,13 @@
 
 ## 알고리즘 사이트
 
----
 + baekjoon: https://www.acmicpc.net/
+
+---
 
 ## 폴더 구조
 
----
+
 + 사이트 폴더 - part명 - 문제 폴더 - 소스코드 및 풀이 방법 파일
     + 예) boj -> sorting -> 1000 -> juyoung.py, 풀이방법.md
 + 소스코드: 자신의 이름, 별명, 아이디 중 하나 `.확장자명` 으로 작성한다.
@@ -30,10 +27,11 @@
     +  풀이하는 문제가 아닌, 개인 해설의 경우 `사용자이름_풀이방법.md` 로 파일 생성 후 작성
         + 예) juyoung_풀이방법.md
   
-
+  
+  
+---
 ## 스터디 Rule
 
----
 +  "이것이 취업을 위한 코딩 테스트다. with Python" 이틀에 1 part 씩 공부
 +  해당 part의 예제 풀이 후 소스 코드 PR 필수
 +  각 part 별 문제 4문제씩 선정
@@ -43,14 +41,14 @@
 +  해설 내용: 문제 접근 방법, 시간 복잡도 , 공간 복잡도 등등,, 내용 설명
 +  추가로 추천하고 싶은 문제가 있을 경우 폴더 rule 에 맞게 폴더 생성 후 알려주기 (recommend 폴더에)
 
+---
 ## Git 사용 방법
 
----
 #### 1. git 설치  
 https://git-scm.com/downloads (자세한건 검색하기)
 #### 2. git clone
 1. `https://github.com/juyoung810/idecs-algorithm-study repository` 에 오른쪽 상단 fork 버튼 클릭
-##### 2. 자신의 repository로 이동 후 fork 한 자신의 repository의 초록색 code 버튼 아래의 주소 복사
+2. __자신의 repository로 이동 후 fork 한 자신의 repository의 초록색 code 버튼 아래의 주소 복사___
 3. 다운로드하길 원하는 폴더의 위치로 이동 후 터미널 창에
 
        git clone [복사한 url]
@@ -69,10 +67,10 @@ https://git-scm.com/downloads (자세한건 검색하기)
 
 
 
-#### 3. 주영의 repository 의 내용 받아 오고 싶을 때  (동기화) -> 주영거랑 내거랑 달라진게 없으면 안해도 됨!
+#### 3. 주영의 repository 의 내용 받아 오고 싶을 때 -> 주영거랑 내거랑 달라진게 없으면 안해도 됨!
 > 항상 문제가 올라오니, 웬만하면 내용 받아오고 문제풀이 시작하는게 좋음!
 
-1. 주영의 repsitory(upstream으로 2.7에서 설정 )의 내용을 받는다.
+1. 주영의 repsitory(upstream으로 2.7에서 설정)의 내용을 받는다.
    
             git fetch upstream
    
