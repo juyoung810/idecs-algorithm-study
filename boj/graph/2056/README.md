@@ -77,5 +77,5 @@ while q:
 - 항상 n 번 작업이 마지막으로 끝나는 것이 아님을 유의해야한다.
 ```python
 # 제일 마지막 작업이 끝나는 시간 = times 테이블에서 가장 큰 수
-print(max(dp))
+print(max(dp))  
 ```
