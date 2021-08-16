@@ -1,0 +1,63 @@
+'''
+< 문자열 압축 >
+반복되는 문자가 있는 경우 압축한다.
+정해진 길이로 자른다. 때문에 문자열 길이의 약수에 해당하는 걸로 나눌 수 있을 듯
+!! 약수가 아니어도 나눌 수 있다... 아니면 그냥 넘어가면 됨
+문자열을 받고, 약수 길이 리스트를 받아서 슬라이스를 한다.
+이전 것과 같으면 +1을 하고, 다르면 1로 만든다.
+'''
+
+# def solution(s):
+#     answer = len(s)
+#     # 약수 구하기
+#     subs = []
+#     for i in range(1, len(s)//2+1):
+#         if len(s) % i == 0:
+#             subs.append(i)
+#
+#     for sub in subs:
+#         compressed = ""
+#         prev = s[0:sub]
+#         count = 1
+#         # 단위만큼 증가시키며 이전 문자열과 비교
+#         for j in range(sub, len(s), sub):
+#             # 이전 상태와 동일하다면 압축 횟수 증가
+#             if prev == s[j:j+sub]:
+#                 count += 1
+#             # 동일하지 않다면
+#             else:
+#                 compressed += str(count) + prev if count >= 2 else prev
+#                 # 상태 초기화
+#                 prev = s[j:j+sub]
+#                 count = 1
+#         # 남아있는 문자열에 대해 처리
+#         compressed += str(count) + prev if count >= 2 else prev
+#         # 만들어지는 압축 문자열이 가장 짧은 것이 정답
+#         answer = min(answer, len(compressed))
+#
+#     return answer
+
+
+def solution(s):
+    answer = len(s)
+    # 1개 단위부터 압축 단위를 늘려가며 확인
+    for step in range(1, len(s)//2 + 1):
+        compressed = ""
+        prev = s[0:step]    # 앞에서부터 step 만큼의 문자열 추출
+        count = 1
+        # 단위 크기만큼 증가시키며 이전 문자열과 비교
+        for j in range(step, len(s), step):
+            # 이전 상태와 동일하다면 압축 횟수 증가
+            if prev == s[j:j+step]:
+                count += 1
+            # 이전 상태와 다르다면(문자열 압축 불가시)
+            else:
+                compressed += str(count) + prev if count >= 2 else prev
+                prev = s[j:j+step]  # 다시 상태 초기화
+                count = 1
+        # 남아 있는 문자열에 대해서 처리
+        compressed += str(count) + prev if count >= 2 else prev
+        # 만들어지는 압축 문자열이 가장 짧은 것이 정답
+        answer = min(answer, len(compressed))
+
+    return answer
