@@ -34,8 +34,8 @@ n = int(input())    # 학생 수 n
 # 이름, 국어, 영어, 수학 점수 받기
 student = []
 for _ in range(n):
-    name, kor, eng, math = input().split()
-    student.append((name, int(kor), int(eng), int(math)))
+    name, kor, eng, math = map(str, input().split())
+    student.append([name, int(kor), int(eng), int(math)])
 
 def multisort(goal, specs):
     for idx, reverse in reversed(specs):
@@ -45,4 +45,26 @@ def multisort(goal, specs):
 multisort(student, ((1, False), (2, True), (3, False), (0, True)))
 
 for stu_info in student:
-    print(stu_info(0))
+    print(stu_info[0])
+
+
+'''
+안된다... 그냥 sort로 쉽게 풀 수 있는듯?
+방법은 같은 것 같다. 굳이 저렇게 막 함수로 만들고 그럴 필요 없는듯
+'''
+
+import sys
+input = sys.stdin.readline
+
+n = int(input())
+student = []
+
+for _ in range(n):
+    student.append(list(map(str, input().split())))
+
+student.sort(key=lambda x: (-int(x[1]), int(x[2]), -int(x[3]), x[0]))
+
+for info in student:
+    print(info[0])
+
+# 이게 뭐라고 쉽지 않다... 기본적인걸 놓치니 오히려 찾기 힘들었다!
