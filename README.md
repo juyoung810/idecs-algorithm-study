@@ -1,12 +1,11 @@
 # idecs-algorithm-study
 
->아이덱스 2021 하계 여름 방학 알고리즘 스터디
+> 아이덱스 파이썬 알고리즘 스터디
 
 ## Programming Language
-
-+ python
-+ 기본으로 python 언어를 사용하여 코드를 작성, 해설한다.
++ python를 사용하여 코드를 작성, 해설한다.
 + 추가적으로 다른 언어를 사용하여 푼 경우 해당 코드를 올리는 것은 자유
++ pycharm 툴 사용 추천
 
 ## 알고리즘 사이트
 
@@ -16,128 +15,53 @@
 
 ## 폴더 구조
 
-
-+ 사이트 폴더 - part명 - 문제 폴더 - 소스코드 및 풀이 방법 파일
-    + 예) boj -> sorting -> 1000 -> juyoung.py, 풀이방법.md
-+ 소스코드: 자신의 이름, 별명, 아이디 중 하나 `.확장자명` 으로 작성한다.
-    + 예) juyoung.py
++ 자신의 이름 - 사이트 폴더 - 문제 폴더 - 소스코드 및 풀이 방법 파일
+    + 예) juyoung -> boj -> 1000 -> juyoung.py, 풀이방법.md
   
 + 풀이방법:
-    +  각 part 별 자신이 해설해야하는 문제는 `README.md` 파일에 풀이 작성
-    +  풀이하는 문제가 아닌, 개인 해설의 경우 `사용자이름_풀이방법.md` 로 파일 생성 후 작성
-        + 예) juyoung_풀이방법.md
+    +  각 part 별 자신이 해설해야 하는 문제는 `.md` 파일로 반드시 풀이 작성
+    +  풀이하는 문제가 아닌, 개인 해설의 경우 자유
   
-  
-  
+    
 ---
 ## 스터디 Rule
 
-+  "이것이 취업을 위한 코딩 테스트다. with Python" 이틀에 1 part 씩 공부
-+  해당 part의 예제 풀이 후 소스 코드 PR 필수
-+  각 part 별 문제 4문제씩 선정
-+  문제 풀이 후 해당 문제 폴더에 자신의 소스코드 PR
-+  다 풀지 못하더라도 pseudo code 또는 아이디어 제시 후 PR 해보기!
-+  두 시간이상 고민했더라도 풀지 못할 경우, 잘 정리된 코드 찾아본 후 분석 , 정리 후 PR 권장
-+  해설 내용: 문제 접근 방법, 시간 복잡도 , 공간 복잡도 등등,, 내용 설명
-+  추가로 추천하고 싶은 문제가 있을 경우 폴더 rule 에 맞게 폴더 생성 후 알려주기 (recommend 폴더에)
++ 하루에 한 문제 선정된 문제 풀이 소스 코드 PR 필수
++ 회의 전 결정된 자신의 해설 문제의 경우 풀이 `.md` 파일 작성 후 PR 필수
++ 월요일 8시 회의 시간 이전까지 PR 하지 않을 시 한 문제 당 벌금 1000원
++ 추가로 추천하고 싶은 문제가 있을 경우 폴더 rule 에 맞게 폴더 생성 후 알려주기 (recommend 폴더에)
++ 분기 별 폴더 년도/winter(summer) 폴더로 합쳐질 예정..!
+
 
 ---
-## Git 사용 방법
+## github 사용 방법
+> 저도 잘은 모르지만,, 대충 올립니다.. 모를 경우 검색추천합니다.
 
-#### 1. git 설치  
-https://git-scm.com/downloads (자세한건 검색하기)
-#### 2. git clone
-1. `https://github.com/juyoung810/idecs-algorithm-study repository` 에 오른쪽 상단 fork 버튼 클릭
-2. __자신의 repository로 이동 후 fork 한 자신의 repository의 초록색 code 버튼 아래의 주소 복사___
-3. 다운로드하길 원하는 폴더의 위치로 이동 후 터미널 창에
+### 1. github에 있는 폴더 내 로컬로 받아오는 법 (git clone 하는 법)
 
-       git clone [복사한 url]
+- 오른쪽 상단의 초록색 `code` 버튼 클릭 -> github 저장소 주소 나온다
+- https 형식의 주소를 복사하기
+- 터미널(cmd) 를 통해 자신의 로컬에서 폴더의 복사를 원하는 위치로 이동
+- clone 명령어 입력
+ `git clone https://github.com/juyoung810/idecs-algorithm-study.git`
 
-4. 해당 폴더로 이동 후 폴더 안에서 마우스 오른쪽 클릭 후 "Git Bash Here"  클릭
-5. 자신의 branch 생성하기
+- `git remote -v` 명령어 입력해서 원격 저장소와 연결되었는지 확인해보기
 
-          git branch [자신의이름 or 별명 or 아이디 중 마음대로 하나]
+### 2. 작성한 소스코드 원격 저장소에 올리는 법 (git add, commit, push)
+- 소스코드 자유롭게 자신의 폴더에 작성
+- `git status` 통해 자신이 수정,추가한 파일 확인 가능
+- `git add .` -> `git commit -m "(날짜) 사람이름 몇번 문제 풀이" ` -> `git push origin main`
+- 위의 과정을 통해 원격 저장소에 올라가짐!
+- `git commit -am "커밋 메세지 내용"` 으로 `add`, `commit` 한번에 하는 것도 가능
 
-6. 생성한 branch로 이동
+### 3. 원격 저장소의 변경 내용 내 로컬로 받는 방법 (git pull)
+- `git pull origin main` 통해 받기 가능
+- 한번 하고 나면 `git pull`로도 간단하게 가능
 
-        git checkout [생성한 branch 이름]
-7. 주영의 repository 와 내가 만든 로컬 동기화 하기 위해 주소 추가
-
-        git remote add upstream https://github.com/juyoung810/idecs-algorithm-study.git
-
-
-
-#### 3. 주영의 repository 의 내용 받아 오고 싶을 때 -> 주영거랑 내거랑 달라진게 없으면 안해도 됨!
-> 항상 문제가 올라오니, 웬만하면 내용 받아오고 문제풀이 시작하는게 좋음!
-
-1. 주영의 repsitory(upstream으로 2.7에서 설정)의 내용을 받는다.
-   
-            git fetch upstream
-   
-2.  자신이 만든 branch가 아닌 main으로 이동
-    
-            git checkout main
-    
-3.  나의 main과 주영의 repository(upstream) 합치기
-
-        git merge upstream/main
-
-4.  나의 branch로 이동
-
-        git checkout <내가 만든 브런치>
-
-5.  주영의 내용과 합친 나의 main을 나의 branch와 합치기   
-
-        git merge main
-
-#### 4. 각각 해당하는 폴더에 자신의 소스 코드 작성
-   + 소스 코드 작성이전에 자신이 생성한 브런치인지 확인 -> 이미 자기 branch면 안해도 됨
-   
-          git checkout [자신이 생성한 브런치]
-   -> 소스 코드 작성하기
-
-#### 5. 내가 작성한 소스 코드 올리기 (주영거에 올리는 거)
-1. staging 영역에 추가
-
-          git add .
-
-2. repository에 commit
-
-          git commit -m "커밋 메세지 자유"
-
-    + 처음 commit 할 시 *** Please tell me who you are. 메세지가 뜬다. 
-    
-            git config --global user.email [you@example.com]
-
-        !! git 에 한번도 commit 해본 적 없는 경우 하면 됨.
-
-3. 원격 저장소의 main branch 에 푸쉬
-  
-          git push origin [자신의 브런치 이름]
-
-4. PR 날리는 법
-    1. 자신의 원격 git repository 로 이동 : `https://github.com/[본인 아이디]/idecs-algorithm-study`
-    2. issue 옆 pull request 버튼 클릭 
-       + `base repository : juyoung810/.. base:main <- head repository: 자기 아이디/.. compare: 자신이 만든 branch `
-    3. create pull request 버튼 계속 클릭!! -> 모르겠으면 pull request 날리는 법 검색 해보기!
-    
-
-
-          
-
-
-
-     
-
-
-
-
-
-
-  
-    
-    
-
-
-
-
+---
+### 추가 참고 사항
+- 빈 폴더는 원격 저장소에 반영 안되니 어떤 파일,,(readme.md) 파일 생성 후 올리면 반영됨
+- 따로 branch 는 사용하지 않을 것 같지만 필요 시 사용법 정리하갰습니당
+- 다른 사람 폴더로 잘못 올려서 큰일이 일어나지 않도록 주의,,
+- md 파일 작성하는 방법을 잘 모를 시 -> 마크다운 작성방법! 으로 간단하게 알아볼 수 있음
+- 여름에 작성했던 md 파일 형식을 한번 살펴보고 풀이 작성을 추천합니당
