@@ -15,4 +15,3 @@ for i in range(0, len(price)):
     pay = pay + int(price[i])
 
 print(pay)
-

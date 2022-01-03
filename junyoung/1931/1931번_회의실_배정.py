@@ -10,6 +10,7 @@ for i in range(N):
     if cf_tm[i][0] >= ed_tm:
         count += 1
         ed_tm = cf_tm[i][1]
+        
 print(count)
 
 # # #############################################################
