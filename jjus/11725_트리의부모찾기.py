@@ -1,3 +1,8 @@
+"""
+bfs 통해 자신을 queue에 집어 넣은 것이 부모
+
+568ms -> 함수로 고치면 더 빨라질듯
+"""
 import sys
 input = sys.stdin.readline
 
