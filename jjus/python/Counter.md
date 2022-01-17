@@ -1,7 +1,7 @@
 # collections 모듈의 Counter 클래스
 > 데이터의 개수를 셀 때 유용한 클래스
 > 
-> 참고: https://www.daleseo.com/python-collections-counter/
+> 참고: https://docs.python.org/3/library/collections.html#collections.Counter
 
 # 사용 방법
 `from collections import Counter`
