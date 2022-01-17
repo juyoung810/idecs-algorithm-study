@@ -20,18 +20,18 @@ Counter('hello world')
 ###[Dictionaries: dict and defaultdict]
 > https://www.ics.uci.edu/~pattis/ICS-33/lectures/complexitypython.txt
                        
-| 연산             | 예제          | 시간복잡도       | 참고                                                            |
-|----------------|-------------|-------------|---------------------------------------------------------------|
-| Index          | d[k]        | O(1)	       |                                                               |
-| Store          | d[k] = v    | O(1)	       |                                                               |
-| Length         | len(d)      | O(1)	       |                                                               |
-| Delete         | del d[k]    | O(1)	       |                                                               |
-| get/setdefault | d.get(k)    | O(1)	       |                                                               |
-| Pop            | d.pop(k)    | O(1)	       |                                                               |
-| Pop item       | d.popitem() | O(1)	       | '랜덤하게' 고른 item pop                                            |
-| Clear          | d.clear()   | O(1)	       | s = {} 또는 s = dict() 와 유사                                     |
-| View           | d.keys()    | O(1)	       | d.values() 도 같다.                                              |
-| Construction   | dict(...)   | O(len(...)) | (key,value) tuple의 갯수에 달렸다.                                   |
+| 연산             | 예제          | 시간복잡도       | 참고                                                                 |
+|----------------|-------------|-------------|--------------------------------------------------------------------|
+| Index          | d[k]        | O(1)	       |                                                                    |
+| Store          | d[k] = v    | O(1)	       |                                                                    |
+| Length         | len(d)      | O(1)	       |                                                                    |
+| Delete         | del d[k]    | O(1)	       |                                                                    |
+| get/setdefault | d.get(k)    | O(1)	       | get(key,value) - key 존재하지 않을 경우 (key,value) 새로운 pair 생성 해줌          |
+| Pop            | d.pop(k)    | O(1)	       |                                                                    |
+| Pop item       | d.popitem() | O(1)	       | '랜덤하게' 고른 item pop                                                 |
+| Clear          | d.clear()   | O(1)	       | s = {} 또는 s = dict() 와 유사                                          |
+| View           | d.keys()    | O(1)	       | d.values() 도 같다.                                                   |
+| Construction   | dict(...)   | O(len(...)) | (key,value) tuple의 갯수에 달렸다.                                        |
 | Iteration      | for k in d: | O(N)        | all forms: keys, values, items<br/> Worst: no return/break in loop | 
 
 
