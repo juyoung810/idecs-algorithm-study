@@ -1,5 +1,5 @@
 import sys
-input = sys.stdin.readline
+input = sys.stdin.readline # 시간 줄이기
 
 N = int(input())
 dict = {}
@@ -11,9 +11,6 @@ for i in range(N):
         dict[y] = 1
 for key in sorted(dict.keys()):
     print(key, dict[key])
-
-print(sorted(dict.keys()))
-print(sorted(dict.items()))
 
 
 ########################################################
