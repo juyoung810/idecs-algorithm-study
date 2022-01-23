@@ -58,6 +58,15 @@
 - `git pull origin main` 통해 받기 가능
 - 한번 하고 나면 `git pull`로도 간단하게 가능
 
+### (추천)❕ branch 생성 후 push
+- `git branch [자신이 원하는 브랜치 명]` 통해 자신의 branch 생성
+- `git checkout [자신의 branch]`
+- __소스코드 작성 전 자신의 branch 현재 어디인지 확인 (main인지,,자기 branch 인지)
+- `git commit -am "..."` -> `git push origin [branch]`
+
+--> 다른 사람과 branch 같이 안쓰게 되서 remote main의 변경 사항 pull 하지않아도 
+자신의 branch 의 상태 관리 가능 (pull 하지 않고 바로 작성 -> push 가능)
+
 ---
 ### 추가 참고 사항
 - 빈 폴더는 원격 저장소에 반영 안되니 어떤 파일,,(readme.md) 파일 생성 후 올리면 반영됨
