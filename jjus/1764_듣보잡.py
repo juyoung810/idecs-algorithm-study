@@ -7,7 +7,7 @@
 
 - 결과 list 로 변경 후 sort
 - 길이 출력 & list 요소 출력
-
+136ms
 """
 import sys
 input = sys.stdin.readline
