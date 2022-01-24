@@ -1,0 +1,43 @@
+'''
+< 놀라운 문자열 >
+
+- 대문자 알파벳으로만 이루어져 있는 문자열이 있다.
+- 이 문자열에 대해 D-쌍 정의 가능 : 문자열에 포함되어 있는, 거리가 D인 두 문자를 순서대로 나열한 것
+- 문자열의 길이가 N이라고 할 때, 0-쌍부터 (N-2)쌍까지가 정의된다.
+- 정의되는 D에 대해, 어떤 문자열의 모든 D 쌍들이 서로 다를 때, 이 문자열을 D유일하다고 한다.
+- 만일 어떤 문자열이 정의되는 모든 D에 대해 D-유일하면, 이 문자열을 놀라운 문자열 이라고 한다.
+- 문자열이 주어질 때, 이 문자열이 놀라운 문자열인지 아닌지 구햊보자!
+
+< 아이디어 >
+- 문자열의 길이를 이용해서 인덱스를 쓰면 되지 않을까?
+- 각각의 D쌍에 대해서 확인한다.
+- 이미 존재했는지 여부를 검색하기 위해 일반적인 배열에 담으면 비효율적이므로 해시맵을 통해 해결한다.
+- set 혹은 dict 사용. O(1)의 시간복잡도 가진다.
+- set은 add를 쓴다
+- for ~ else : 포문에서 break 없이 빠져나오는 경우를 처리하는 방법
+- 솔직히 나는 넘 어려웠다 ㅋ
+'''
+
+
+import sys
+input = sys.stdin.readline
+
+while True:
+    s = input().rstrip()
+    if s == '*':
+        break
+
+    for d in range(1, len(s)-1):
+        check = set()
+        for i in range(len(s)-d):
+            pair = s[i] + s[i+d]
+            if pair in check:
+                print(s, 'is NOT surprising.')
+                break
+            else:
+                check.add(pair)
+        else:
+            continue
+        break
+    else:
+        print(s, 'is surprising.')
