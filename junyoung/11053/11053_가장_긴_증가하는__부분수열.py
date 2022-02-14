@@ -18,6 +18,7 @@ for i in range(1, N):
             index = _list[_i]
             _x = max(count[index], _x)
         count[i] = _x+1
+    print(_list)
 M = max(count[i] for i in range(N))
 print(M)
 
