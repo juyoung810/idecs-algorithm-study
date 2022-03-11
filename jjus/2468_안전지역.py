@@ -28,7 +28,7 @@ def bfs(x, y, std):
                         q.append([nx, ny])
 
 
-max_h = max(max(board))
+max_h = max(map(max,board))
 now_h = 1 # 아무것도 잠기지 않았을 경우
 count = 0
 for i in range(1,max_h):
