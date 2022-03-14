@@ -14,15 +14,33 @@ for key in sorted(dict.keys()):
 
 
 ########################################################
-# import sys
 
-# n = int(sys.stdin.readline())
-# ext_dict = {}
-# for i in range(n):
-#     _, ext = sys.stdin.readline().rstrip().split(".")
-#     if ext_dict.get(ext):
-#         ext_dict[ext] += 1
-#     else:
-#         ext_dict[ext] = 1
-# for key in sorted(ext_dict.keys()):
-#     print('{} {}'.format(key, ext_dict[key]))
+import sys
+n = int(sys.stdin.readline())
+
+ext_dict = {}
+for i in range(n):
+    _, ext = sys.stdin.readline().rstrip().split(".")
+    if ext_dict.get(ext):
+        ext_dict[ext] += 1
+    else:
+        ext_dict[ext] = 1
+for key in sorted(ext_dict.keys()):
+    print('{} {}'.format(key, ext_dict[key]))
+
+########################################################
+# Counter 사용하기
+
+import sys
+input = sys.stdin.readline
+from collections import Counter
+
+N = int(input())
+name = []
+for i in range(N):
+    _, x = input().strip().split('.')
+    name.append(x)
+counter = sorted(Counter(name).most_common())
+
+for i in range(len(counter)): 
+    print('{} {}'.format(counter[i][0], counter[i][1]))
