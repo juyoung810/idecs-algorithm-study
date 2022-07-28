@@ -8,6 +8,7 @@ def two_pointer(a, n, m):
     s = 0
     e = 0
     result = 2e9 # 가능한 가장 큰 수
+    # 같은 수 선택 가능, s,e 범위 내 존재 필요
     while s <= e < n and s >= 0:
         t = a[e] - a[s]
         if t >= m:
